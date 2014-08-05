@@ -2,40 +2,61 @@
   <head>
     <link rel="stylesheet" href="third-party/bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+      function expandHeader() {
+        document.body.className = (document.body.className == "visible") ? "" : "visible";
+      }
+    </script>
   </head>
   <body>
-    <header></header>
-    <section class="hero">
-      <!--
-      <ul class="nav masthead-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      -->
-      <div class="call-to-action">Adventure to</br> new heights.</div>
-    </section>
-    <div class="container">
-      <div class="row">
+    <header class="header">
+      <nav class="row header-row">
         <div class="col-lg-4">
+          <h2 class="header-title"><span class="header-title-text">USA</span></h2>
+          <a class="btn btn-default header-button" href="#" role="button">Whitney</a>
+          <a class="btn btn-default header-button" href="#" role="button">Rainier</a>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="header-title"><span class="header-title-text">Italy</span></h2>
+          <a class="btn btn-default header-button" href="#" role="button">Monc Blanc</a>
+          <a class="btn btn-default header-button" href="#" role="button">Dolomites</a>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="header-title"><span class="header-title-text">Nepal</span></h2>
+          <a class="btn btn-default header-button" href="#" role="button">Everest</a>
+          <a class="btn btn-default header-button" href="#" role="button">Annapurna</a>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <nav class="hero-menu">
+        <a class="btn btn-default hero-menu-button" href="#" role="button" onclick="expandHeader()">Destinations</a>
+        <a class="btn btn-default hero-menu-button" href="#" role="button">About Us</a>
+        <a class="btn btn-default hero-menu-button" href="#" role="button">Book Now</a>
+      </nav>
+      <h1 class="hero-call-to-action">Adventure to</br> new heights.</h1>
+    </section>
+    <section class="container page-content">
+      <div class="row">
+        <article class="col-lg-4">
           <img class="img-circle" src="assets/planes.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Breathtaking</h2>
           <p>The air is thinner up there. Make sure your lung capacity is up to snuff.</p>
           <p><a class="btn btn-default" href="#" role="button">Read more</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </article>
+        <article class="col-lg-4">
           <img class="img-circle" src="assets/people.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Pretty Safe</h2>
+          <h2>Mostly Safe</h2>
           <p>We boast exceptionally high survival rates for our treks.</p>
           <p><a class="btn btn-default" href="#" role="button">Read more</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </article>
+        <article class="col-lg-4">
           <img class="img-circle" src="assets/peak.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Totally Worth It</h2>
           <p>Everybody who does it says, "I'm super sore, but it was totally worth it."</p>
           <p><a class="btn btn-default" href="#" role="button">Read more</a></p>
-        </div><!-- /.col-lg-4 -->
+        </article>
       </div>
-    </div>
+    </section>
   </body>
 </html>
