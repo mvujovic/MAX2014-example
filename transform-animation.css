@@ -1,0 +1,20 @@
+/* body */
+
+body {
+  /* transform */
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -webkit-transform: translateY(-180px);
+
+  -moz-transition: -webkit-transform 0.4s ease-out;
+  -moz-transform: translateY(-180px);
+
+  transition: transform 0.4s ease-out;
+  transform: translateY(-180px);
+}
+
+body.visible {
+  /* transform */
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}

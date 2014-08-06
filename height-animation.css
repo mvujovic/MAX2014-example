@@ -1,0 +1,12 @@
+/* body */
+
+body .header {
+  /* box */
+  height: 0;
+  transition: height 0.4s ease-out;
+}
+
+body.visible .header {
+  height: 180px;
+  -webkit-transform: translateY(0);
+}
