@@ -83,12 +83,15 @@ body {
 }
 
 .hero-menu-button:hover,
-.hero-menu-button-selected {
+.selected {
   /* box */
   border: solid 2px #333;
 
   /* background */
   background-color: transparent;
+
+  /* text */
+  color: #333;
 }
 
 .hero-call-to-action {

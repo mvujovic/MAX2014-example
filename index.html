@@ -4,7 +4,17 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <script>
       function expandHeader() {
-        document.body.className = (document.body.className == "visible") ? "" : "visible";
+        var isExpanded = (document.body.className == "visible");
+        var headerButton = document.getElementById("header-button");
+        if (!isExpanded) {
+          document.body.className = "visible";
+          headerButton.className += " selected";
+        } else {
+          document.body.className = "";
+
+          var className = headerButton.className;
+          headerButton.className = className.substring(0, className.length - " selected".length);
+        }
       }
     </script>
   </head>
@@ -30,7 +40,7 @@
     </header>
     <section class="hero">
       <nav class="hero-menu">
-        <a class="btn btn-default hero-menu-button" href="#" role="button" onclick="expandHeader()">Destinations</a>
+        <a id="header-button" class="btn btn-default hero-menu-button" href="#" role="button" onclick="expandHeader()">Destinations</a>
         <a class="btn btn-default hero-menu-button" href="#" role="button">About Us</a>
         <a class="btn btn-default hero-menu-button" href="#" role="button">Book Now</a>
       </nav>
