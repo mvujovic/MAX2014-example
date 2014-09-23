@@ -1,3 +1,12 @@
+/* disable page load animations */
+/* http://css-tricks.com/transitions-only-after-page-load/ */
+.preload, .preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 /* transform animation */
 
 .transform-animation {
