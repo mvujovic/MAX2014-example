@@ -1,3 +1,36 @@
+/* transform animation */
+
+.transform-animation {
+  /* transform */
+  -webkit-transition: -webkit-transform 4s ease-out;
+  -webkit-transform: translateY(-180px) translateZ(0);
+
+  -moz-transition: -webkit-transform 0.4s ease-out;
+  -moz-transform: translateY(-180px) translateZ(0);
+
+  transition: transform 0.4s ease-out;
+  transform: translateY(-180px) translateZ(0);
+}
+
+body.visible {
+  /* transform */
+  -webkit-transform: translateY(0) translateZ(0);
+  -moz-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
+}
+
+/* height animation */
+
+body.height-animation .header {
+  /* box */
+  height: 0;
+  transition: height 4s ease-out;
+}
+
+body.height-animation.visible .header {
+  height: 180px;
+}
+
 /* body */
 
 body {
@@ -8,7 +41,7 @@ body {
   background-color: #eee;
 
   /* text */
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "museo-sans", "source-sans-pro", sans-serif;
 }
 
 /* generic */
@@ -47,7 +80,6 @@ body {
   height: 400px;
 
   /* background */
-  /* Thanks http://css-tricks.com/perfect-full-page-background-image/ */
   background: url(assets/bg.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -128,7 +160,7 @@ body {
 
 .header-title-text {
   /* box */
-  display: inline-block;;
+  display: inline-block;
   width: 148px;
 
   /* text */
