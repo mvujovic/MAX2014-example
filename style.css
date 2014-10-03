@@ -9,7 +9,7 @@
 
 /* transform animation */
 
-.transform-animation {
+body.transform-animation {
   /* transform */
   -webkit-transition: -webkit-transform 4s ease-out;
   -webkit-transform: translateY(-180px) translateZ(0);
@@ -21,7 +21,7 @@
   transform: translateY(-180px) translateZ(0);
 }
 
-body.visible {
+body.transform-animation.visible {
   /* transform */
   -webkit-transform: translateY(0) translateZ(0);
   -moz-transform: translateY(0) translateZ(0);
@@ -50,7 +50,7 @@ body {
   background-color: #eee;
 
   /* text */
-  font-family: "museo-sans", "source-sans-pro", sans-serif;
+  font-family: "museo-sans", "Museo Sans", sans-serif;
 }
 
 /* generic */
